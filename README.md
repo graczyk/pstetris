@@ -14,9 +14,10 @@ Installation
 --------------
 You'll need OS X since Ghostview apparently doesn't work on OS X. 
 Have Homebrew Python in your path
-	pip install psutil
 
-Then
-	python game.py
+    pip install psutil
+
+Then	
+    python game.py
 
 You'll need write access to the directory that the game lives in or bad things will happen
