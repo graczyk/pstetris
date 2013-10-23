@@ -10,15 +10,18 @@ So I decided to do so.
 
 I'm sorry in advance.
 
+Notes
+--------------
+I gave up on this after realizing what a nightmare trying to reliably define and place the game pieces in postscript would be. Even if the game logic was broken out into the Python helper, this would be a herculean feat.
+My heart goes out to anyone who's tried using postscript for something like this.
+
 Installation
 --------------
-You'll need OS X since Ghostview apparently doesn't work on OS X. 
-Have Homebrew Python in your path
+You'll need ghostscript and ghostview and python. (not that this actually works)
 
-    pip install psutil
+On OS X you can do this with Homebrew
 
-Then
+    brew install ghostscript
+    brew install gv
 
-    python game.py
-
-You'll need write access to the directory that the game lives in or bad things will happen.
+Use your favorite package manager on your favorite Linux distribution to get gv.
