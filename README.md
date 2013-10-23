@@ -18,6 +18,7 @@ Have Homebrew Python in your path
     pip install psutil
 
 Then
+
     python game.py
 
-You'll need write access to the directory that the game lives in or bad things will happen
+You'll need write access to the directory that the game lives in or bad things will happen.
