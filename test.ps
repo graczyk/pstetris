@@ -1,9 +1,27 @@
-%!PS
-/Courier             % name the desired font
-20 selectfont        % choose the size in points and establish 
-                     % the font as the current one
-72 500 moveto        % position the current point at 
-                     % coordinates 72, 500 (the origin is at the 
-                     % lower-left corner of the page)
-(Hello world!) show  % stroke the text in parentheses
-showpage             % print all on the page
+%! 
+
+/inch {72 mul} def      % Convert inches->points (1/72 inch)
+
+%draw board
+ newpath 
+ 1 inch .25 inch moveto 
+ 8 inch .25 inch lineto
+ 8 inch 10.75 inch lineto 
+ 1 inch 10.75 inch lineto 
+ closepath
+ stroke
+ 
+ %basic square unit all pieces will be made of
+ /csquare {
+	 newpath
+	 0 inch 0 inch moveto
+	 0 inch .7 inch lineto
+ 	 .7 inch .7 inch lineto
+	 .7 inch 0 inch lineto
+	 closepath
+	 setrgbcolor
+	 fill
+} def
+
+5 inch 5 inch csquare
+ showpage
